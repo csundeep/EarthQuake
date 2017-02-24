@@ -5,17 +5,17 @@ package com.example.sundeepchilukur.earthquake;
  */
 public class EarthQuake {
 
-    private String magnitude;
+    private double magnitude;
     private String location;
-    private String date;
+    long timeInMilliSec;
 
-    public EarthQuake(String magnitude, String location, String date) {
+    public EarthQuake(double magnitude, String location, long timeInMilliSec) {
         this.magnitude = magnitude;
         this.location = location;
-        this.date = date;
+        this.timeInMilliSec = timeInMilliSec;
     }
 
-    public String getMagnitude() {
+    public double getMagnitude() {
         return magnitude;
     }
 
@@ -23,7 +23,7 @@ public class EarthQuake {
         return location;
     }
 
-    public String getDate() {
-        return date;
+    public long getTimeInMilliSec() {
+        return timeInMilliSec;
     }
 }
