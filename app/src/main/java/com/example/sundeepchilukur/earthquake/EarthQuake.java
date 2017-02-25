@@ -7,12 +7,14 @@ public class EarthQuake {
 
     private double magnitude;
     private String location;
-    long timeInMilliSec;
+    private long timeInMilliSec;
+    private String url;
 
-    public EarthQuake(double magnitude, String location, long timeInMilliSec) {
+    public EarthQuake(double magnitude, String location, long timeInMilliSec, String url) {
         this.magnitude = magnitude;
         this.location = location;
         this.timeInMilliSec = timeInMilliSec;
+        this.url = url;
     }
 
     public double getMagnitude() {
@@ -25,5 +27,9 @@ public class EarthQuake {
 
     public long getTimeInMilliSec() {
         return timeInMilliSec;
+    }
+
+    public String getUrl() {
+        return url;
     }
 }
